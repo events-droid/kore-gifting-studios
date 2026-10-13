@@ -34,7 +34,7 @@
   };
 
   /* example personalisation shown in the film (clearly sample text) */
-  var SAMPLE = { bottle: 'Priya', notebook: 'A.S.', mug: 'Ananya', pen: 'R. Mehta' };
+  var SAMPLE = { bottle: 'KORE', notebook: 'KORE', mug: 'KORE', pen: 'KORE' };
 
   /* ---------- small maths helpers ---------- */
   function clamp(v, a, b) { return v < a ? a : (v > b ? b : v); }
