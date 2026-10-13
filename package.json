@@ -1,0 +1,15 @@
+{
+  "name": "kore-gifting-studio",
+  "version": "1.1.0",
+  "private": true,
+  "description": "KORE Gifting Studio: cinematic homepage and Customize Your Hamper builder. Static site in public/, optional order and enquiry API in api/ (Vercel functions).",
+  "scripts": {
+    "dev": "node server/server.js",
+    "start": "node server/server.js",
+    "check": "node scripts/verify-site.js",
+    "test": "node --test tests/run-tests.js tests/api-tests.js",
+    "retry-emails": "node server/retry-emails.js",
+    "export-orders": "node scripts/export-orders.js"
+  },
+  "engines": { "node": "22.x" }
+}

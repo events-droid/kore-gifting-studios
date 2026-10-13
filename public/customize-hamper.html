@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>KORE Hamper Studio</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.png" type="image/png" sizes="48x48">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&family=Pinyon+Script&display=swap">
+<link rel="stylesheet" href="customize-hamper.css">
+</head>
+<body>
+<div class="hamper-configurator" id="customize">
+  <header class="kh-header"></header>
+
+  <main>
+    <section class="kh-intro" aria-labelledby="kh-h1">
+      <div>
+        <p class="kh-eyebrow">Customize Your Hamper</p>
+        <h1 id="kh-h1">Build a hamper, piece by piece.</h1>
+        <p class="kh-intro-p">Choose the box, fill it, add products and make it yours. The preview and the price update with every choice, and you send it to us as a quotation request.</p>
+      </div>
+      <div class="kh-intro-notes">
+        <p class="kh-note" id="kh-sample">We started you with a sample hamper. Change anything, or <button type="button" class="kh-link" data-act="empty-start">start from an empty box</button></p>
+        <p class="kh-note kh-note-demo">Prices on this page are demonstration values until KORE publishes its rates.</p>
+      </div>
+    </section>
+
+    <nav class="kh-stepbar" aria-label="Customisation steps">
+      <span class="kh-stepcount" id="kh-stepcount"></span>
+      <ol id="kh-steps"></ol>
+    </nav>
+
+    <div class="kh-work">
+      <section class="kh-controls" aria-labelledby="kh-step-title">
+        <h2 id="kh-step-title" tabindex="-1"></h2>
+        <div id="kh-panel"></div>
+        <div class="kh-stepnav" id="kh-stepnav"></div>
+      </section>
+
+      <div class="kh-side">
+        <section class="kh-stage" aria-label="Live hamper preview">
+          <div class="kh-stage-head">
+            <h2 id="kh-stage-title"></h2>
+            <button type="button" class="kh-link kh-preview-toggle" id="kh-preview-toggle" data-act="preview-toggle" aria-controls="kh-stage">Hide preview</button>
+          </div>
+          <div class="kh-stage-box">
+            <div id="kh-stage"></div>
+            <span class="kh-stage-tag" id="kh-renderer">Interactive preview</span>
+          </div>
+          <div class="kh-stage-tools" id="kh-stage-tools">
+            <div class="kh-seg" role="group" aria-label="Camera view">
+              <button type="button" data-act="view" data-value="front" data-view="front" aria-pressed="true">Front</button>
+              <button type="button" data-act="view" data-value="side" data-view="side" aria-pressed="false">Side</button>
+              <button type="button" data-act="view" data-value="top" data-view="top" aria-pressed="false">Top</button>
+              <button type="button" data-act="view" data-value="inside" data-view="inside" aria-pressed="false">Inside</button>
+            </div>
+            <div class="kh-seg" role="group" aria-label="Zoom and lid">
+              <button type="button" data-act="zoom-out" aria-label="Zoom out">−</button>
+              <button type="button" data-act="zoom-in" aria-label="Zoom in">+</button>
+              <button type="button" data-act="lid">Close lid</button>
+              <button type="button" data-act="view-reset">Reset view</button>
+            </div>
+          </div>
+          <div class="kh-capacity" id="kh-capacity"></div>
+          <p class="kh-fine">Drag to rotate, scroll or pinch to zoom, double-click a product to look closer. This is a visual guide built from typical product sizes, not a production render: fit, print, engraving and colours are approximate. We send a mockup for approval before anything is made.</p>
+        </section>
+
+        <aside class="kh-summary" id="kh-summary" aria-labelledby="kh-sum-title" tabindex="-1"></aside>
+      </div>
+    </div>
+
+    <section class="kh-inbox" id="kh-inbox" hidden aria-label="Order inbox"></section>
+  </main>
+
+  <div class="kh-mobilebar" id="kh-mobilebar"></div>
+  <div class="kh-toast" id="kh-toast" role="status" aria-live="polite" hidden></div>
+  <div class="kh-modal" id="kh-modal" hidden></div>
+</div>
+
+<script src="hamper-config.js"></script>
+<script src="hamper-catalogue.js"></script>
+<script src="hamper-pricing.js"></script>
+<script src="hamper-preview.js"></script>
+<script src="hamper-preview-3d.js"></script>
+<script src="customize-hamper.js"></script>
+</body>
+</html>

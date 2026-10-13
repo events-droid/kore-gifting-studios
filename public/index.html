@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>KORE Gifting Studio</title>
+<meta name="theme-color" content="#12100E">
+<meta name="description" content="Corporate gifting and custom hampers, curated, branded and delivered anywhere in India.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.png" type="image/png" sizes="48x48">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant:wght@500;600&family=Poppins:wght@300;400;500&family=Manrope:wght@400;500;600;700&display=swap">
+<link rel="preload" as="image" href="img/film-closed.webp">
+<link rel="stylesheet" href="home.css">
+</head>
+<body class="kr">
+<a class="kr-skip" href="#after-story">Skip the intro</a>
+
+<header class="kr-nav" id="kr-nav">
+  <div class="kr-nav-in">
+    <a class="kr-logo" href="#top" aria-label="KORE Gifting Studios, back to top"><img src="img/kore-logo.png" alt="KORE Gifting Studios" width="1200" height="222"></a>
+    <nav class="kr-links" id="kr-links" aria-label="Primary">
+      <a href="#occasions">Occasions</a>
+      <a href="#occasions">Hampers</a>
+      <a href="#corporate">Corporate Gifting</a>
+      <a href="#studio">Studio</a>
+      <a class="kr-builder-link" data-builder href="customize-hamper.html">Customize Your Hamper</a>
+      <a class="kr-btn kr-btn-solid kr-nav-cta" href="#enquiry">Enquire Now</a>
+    </nav>
+    <button type="button" class="kr-menu" id="kr-menu" aria-expanded="false" aria-controls="kr-links"><span class="kr-menu-bars" aria-hidden="true"></span><span class="kr-menu-label">Menu</span></button>
+  </div>
+</header>
+
+<main id="top">
+  <!-- CHAPTERS 1 + 2: THE REVEAL AND THE DETAILS (scroll-driven film) -->
+  <section class="kr-story" id="story" aria-label="The reveal: a KORE hamper opens and its gifts come forward">
+    <div class="kr-stage" id="kr-stage">
+      <img class="kr-poster" id="kr-poster" src="img/film-closed.webp" alt="A closed KORE gift hamper in charcoal linen, tied with a terracotta satin ribbon and bow" fetchpriority="high">
+      <div class="kr-scene" id="kr-scene"></div>
+      <div class="kr-loading" id="kr-loading" role="status" hidden><span></span>Preparing the hamper</div>
+
+      <div class="kr-cap kr-cap-hero" data-cap="hero">
+        <p class="kr-eyebrow">Corporate gifting and custom hampers</p>
+        <h1>More Than a Gift.<br>A Feeling.</h1>
+        <p class="kr-lede">Curated, branded and delivered anywhere in India.</p>
+        <a class="kr-btn kr-btn-solid" href="#chapter-reveal" data-jump="reveal">Discover the Collection</a>
+      </div>
+      <div class="kr-scroll-cue" data-cap="cue" aria-hidden="true"><span></span>Scroll to open</div>
+
+      <div class="kr-cap kr-cap-left" data-cap="reveal" id="chapter-reveal">
+        <p class="kr-eyebrow">The reveal</p>
+        <h2>Inside, every piece is chosen.</h2>
+      </div>
+      <div class="kr-cap kr-cap-right" data-cap="bottle">
+        <p class="kr-eyebrow">Insulated steel bottle, 750 ml</p>
+        <h2>Made Personal.</h2>
+        <p>Laser-engraved or printed with a name, a short message or your logo.</p>
+        <a class="kr-link" data-builder data-add="steel-bottle" href="customize-hamper.html#add-steel-bottle">Personalise a bottle</a>
+        <p class="kr-note">Engraving shown with a sample name.</p>
+      </div>
+      <div class="kr-cap kr-cap-right" data-cap="notebook">
+        <p class="kr-eyebrow">Hardbound notebook</p>
+        <h2>Your Story, Beautifully Bound.</h2>
+        <p>Foil-stamped, debossed or printed on the cover. Lay-flat binding, 192 ruled pages, in A5 or B5.</p>
+        <a class="kr-link" data-builder data-add="notebook" href="customize-hamper.html#add-notebook">Personalise a notebook</a>
+      </div>
+      <div class="kr-cap kr-cap-right" data-cap="mug">
+        <p class="kr-eyebrow">Ceramic coffee mug, 330 ml</p>
+        <h2>A Little Something, Just for You.</h2>
+        <p>Printed with a name, a line of your own or your logo, on the front or all the way around.</p>
+        <a class="kr-link" data-builder data-add="mug" href="customize-hamper.html#add-mug">Personalise a mug</a>
+      </div>
+      <div class="kr-cap kr-cap-right" data-cap="pen">
+        <p class="kr-eyebrow">Pen · chocolates · candle</p>
+        <h2>The Finishing Notes.</h2>
+        <p>An engraved metal pen, a box of handmade chocolates, a hand-poured soy candle. The small things that make a hamper feel complete.</p>
+        <a class="kr-link" data-builder data-add="pen" href="customize-hamper.html#add-pen">Add an engraved pen</a>
+      </div>
+      <div class="kr-cap kr-cap-right" data-cap="collection">
+        <p class="kr-eyebrow">The complete collection</p>
+        <h2>Every Detail. Your Choice.</h2>
+        <p>Choose the box, the filling, every product and how each one is personalised.</p>
+        <a class="kr-btn kr-btn-solid" data-builder href="customize-hamper.html">Create Your Own Hamper</a>
+      </div>
+
+      <nav class="kr-chapters" aria-label="Story chapters">
+        <button type="button" data-jump="hero">The hamper</button>
+        <button type="button" data-jump="reveal">The reveal</button>
+        <button type="button" data-jump="bottle">Made personal</button>
+        <button type="button" data-jump="notebook">Bound</button>
+        <button type="button" data-jump="mug">Just for you</button>
+        <button type="button" data-jump="pen">Finishing notes</button>
+        <button type="button" data-jump="collection">The collection</button>
+      </nav>
+      <a class="kr-skip-film" href="#after-story">Skip to the collection</a>
+    </div>
+
+    <!-- The same story as still frames: shown when motion is reduced or 3D is unavailable -->
+    <div class="kr-static" id="kr-static" hidden>
+      <figure class="kr-frame kr-frame-hero"><img src="img/film-closed.webp" alt="A closed KORE gift hamper in charcoal linen, tied with a terracotta satin ribbon and bow" width="1600" height="950"><figcaption><p class="kr-eyebrow">Corporate gifting and custom hampers</p><h2 class="kr-h1">More Than a Gift. A Feeling.</h2><p class="kr-lede">Curated, branded and delivered anywhere in India.</p></figcaption></figure>
+      <figure class="kr-frame"><img src="img/film-reveal.webp" alt="The hamper open, tissue folded back, showing a bottle, notebook, mug, pen, chocolates and a candle in kraft filling" width="1600" height="950" loading="lazy"><figcaption><p class="kr-eyebrow">The reveal</p><h2>Inside, every piece is chosen.</h2></figcaption></figure>
+      <figure class="kr-frame"><img src="img/film-bottle.webp" alt="A forest green insulated steel bottle engraved with the name Priya" width="1600" height="950" loading="lazy"><figcaption><p class="kr-eyebrow">Insulated steel bottle, 750 ml</p><h2>Made Personal.</h2><p>Laser-engraved or printed with a name, a short message or your logo.</p><a class="kr-link" data-builder data-add="steel-bottle" href="customize-hamper.html#add-steel-bottle">Personalise a bottle</a></figcaption></figure>
+      <figure class="kr-frame"><img src="img/film-notebook.webp" alt="A burgundy hardbound notebook, cover slightly open, foil-stamped with the initials A.S." width="1600" height="950" loading="lazy"><figcaption><p class="kr-eyebrow">Hardbound notebook</p><h2>Your Story, Beautifully Bound.</h2><p>Foil-stamped, debossed or printed on the cover. Lay-flat binding, 192 ruled pages, in A5 or B5.</p><a class="kr-link" data-builder data-add="notebook" href="customize-hamper.html#add-notebook">Personalise a notebook</a></figcaption></figure>
+      <figure class="kr-frame"><img src="img/film-mug.webp" alt="An ivory ceramic mug printed with the name Ananya in terracotta" width="1600" height="950" loading="lazy"><figcaption><p class="kr-eyebrow">Ceramic coffee mug, 330 ml</p><h2>A Little Something, Just for You.</h2><p>Printed with a name, a line of your own or your logo, on the front or all the way around.</p><a class="kr-link" data-builder data-add="mug" href="customize-hamper.html#add-mug">Personalise a mug</a></figcaption></figure>
+      <figure class="kr-frame"><img src="img/film-pen.webp" alt="An engraved black and gold pen above the hamper, with chocolates and a candle" width="1600" height="950" loading="lazy"><figcaption><p class="kr-eyebrow">Pen · chocolates · candle</p><h2>The Finishing Notes.</h2><p>An engraved metal pen, a box of handmade chocolates, a hand-poured soy candle.</p><a class="kr-link" data-builder data-add="pen" href="customize-hamper.html#add-pen">Add an engraved pen</a></figcaption></figure>
+      <figure class="kr-frame"><img src="img/film-collection.webp" alt="The finished hamper, open, with every gift arranged and the bow resting beside it" width="1600" height="950" loading="lazy"><figcaption><p class="kr-eyebrow">The complete collection</p><h2>Every Detail. Your Choice.</h2><p>Choose the box, the filling, every product and how each one is personalised.</p><a class="kr-btn kr-btn-solid" data-builder href="customize-hamper.html">Create Your Own Hamper</a></figcaption></figure>
+    </div>
+  </section>
+
+  <div id="after-story" tabindex="-1"></div>
+
+  <!-- CHAPTER 3: THE MEANING -->
+  <section class="kr-meaning" id="meaning" aria-labelledby="kr-meaning-h">
+    <div class="kr-wrap kr-meaning-grid">
+      <div>
+        <p class="kr-eyebrow">Why KORE</p>
+        <h2 id="kr-meaning-h" class="kr-h2 reveal">Fewer moving parts for you. More care in every box.</h2>
+      </div>
+      <ol class="kr-points">
+        <li class="reveal"><h3>End-to-end execution</h3><p>You approve a mockup. We handle sourcing, branding and delivery.</p></li>
+        <li class="reveal"><h3>Pan-India, multi-address</h3><p>One order, many addresses, including distributed and remote teams.</p></li>
+        <li class="reveal"><h3>Packaging worth keeping</h3><p>Premium, sustainable materials people do not throw away.</p></li>
+        <li class="reveal"><h3>Transparent invoicing</h3><p>Correct, GST-compliant paperwork on every order.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- CHAPTER 4: THE OCCASIONS -->
+  <section class="kr-occasions" id="occasions" aria-labelledby="kr-occ-h">
+    <div class="kr-wrap">
+      <div class="kr-head">
+        <p class="kr-eyebrow">Occasions</p>
+        <h2 id="kr-occ-h" class="kr-h2">A hamper for every moment worth marking.</h2>
+        <p class="kr-sub">Illustrative starting points, not a fixed catalogue. Every hamper is shaped around your brief and budget.</p>
+      </div>
+      <div class="kr-occ-grid">
+        <a class="kr-occ kr-occ-a reveal" data-builder href="customize-hamper.html">
+          <span class="kr-occ-img"><img src="img/occ-welcome.webp" alt="Navy drinkware bottle, notebook, pen, card and lanyard on a wooden desk" loading="lazy" width="900" height="1125"></span>
+          <span class="kr-occ-txt"><span class="kr-occ-kicker">Onboarding</span><span class="kr-occ-name">The Welcome Edit</span><span class="kr-occ-desc">Notebook, drinkware, apparel</span></span>
+        </a>
+        <a class="kr-occ kr-occ-b reveal" data-builder href="customize-hamper.html">
+          <span class="kr-occ-img"><img src="img/occ-festive.webp" alt="Burgundy Diwali gift box with sweets, dry fruits, tea, a candle and a greeting card" loading="lazy" width="900" height="1350"></span>
+          <span class="kr-occ-txt"><span class="kr-occ-kicker">Festive and Diwali</span><span class="kr-occ-name">The Festive Box</span><span class="kr-occ-desc">Sweets, candles, keepsake tin</span></span>
+        </a>
+        <a class="kr-occ kr-occ-c reveal" data-builder href="customize-hamper.html">
+          <span class="kr-occ-img"><img src="img/occ-appreciation.webp" alt="Burgundy gift box with a keepsake watch, pen, keyring, tumbler and coffee jar" loading="lazy" width="900" height="1350"></span>
+          <span class="kr-occ-txt"><span class="kr-occ-kicker">Client appreciation</span><span class="kr-occ-name">The Appreciation Set</span><span class="kr-occ-desc">Premium, understated</span></span>
+        </a>
+        <a class="kr-occ kr-occ-d reveal" data-builder href="customize-hamper.html">
+          <span class="kr-occ-img"><img src="img/occ-wedding.webp" alt="Gold satin wedding gift box with Ganesha and Lakshmi figurines, a gift box tied with a ribbon, and a gold candle" loading="lazy" width="900" height="1350"></span>
+          <span class="kr-occ-txt"><span class="kr-occ-kicker">Weddings</span><span class="kr-occ-name">The Wedding Edit</span><span class="kr-occ-desc">Keepsake boxes for guests and couples</span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHAPTER 6: THE PERSONALISATION EXPERIENCE -->
+  <section class="kr-personal" id="personalise" aria-labelledby="kr-pers-h">
+    <div class="kr-wrap kr-personal-grid">
+      <figure class="kr-exploded reveal"><img src="img/exploded.webp" alt="The hamper open with its bottle, notebook, mug, pen, chocolates and candle lifted above it, ready to choose" loading="lazy" width="1600" height="1100"></figure>
+      <div class="kr-personal-copy">
+        <p class="kr-eyebrow">Customize Your Hamper</p>
+        <h2 id="kr-pers-h" class="kr-h2">Design a Gift That Is Yours.</h2>
+        <p class="kr-sub">Build it piece by piece and watch it come together in 3D, with the price updating as you go.</p>
+        <dl class="kr-facts" id="kr-facts">
+          <div><dt>Box styles</dt><dd data-fact="boxes">9</dd></div>
+          <div><dt>Fillings</dt><dd data-fact="fillings">8</dd></div>
+          <div><dt>Products</dt><dd data-fact="products">35</dd></div>
+          <div><dt>Ways to personalise</dt><dd data-fact="methods">6</dd></div>
+          <div><dt>Finishing touches</dt><dd data-fact="finishing">13</dd></div>
+        </dl>
+        <a class="kr-btn kr-btn-solid" data-builder href="customize-hamper.html">Open the hamper builder</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRACTICAL DETAILS (existing corporate content) -->
+  <section class="kr-corporate" id="corporate" aria-labelledby="kr-corp-h">
+    <div class="kr-wrap">
+      <p class="kr-eyebrow kr-eyebrow-light">For procurement and HR teams</p>
+      <h2 id="kr-corp-h" class="kr-h2">Everything you need to forward this internally.</h2>
+      <p class="kr-sub kr-sub-light">The practical details: occasions, budgets, pricing and lead times, all in one place, no login required.</p>
+      <div class="kr-tablewrap">
+        <table class="kr-table">
+          <caption>Indicative volume pricing: placeholder figures. Confirm real rates before publishing.</caption>
+          <thead><tr><th scope="col">Order size</th><th scope="col">Unit price</th><th scope="col">Lead time</th><th scope="col">Included</th></tr></thead>
+          <tbody>
+            <tr><td>25 to 99 units</td><td>Rs 2,499 + GST</td><td>7 to 14 days</td><td>Standard engraving or 1-colour print</td></tr>
+            <tr><td>100 to 499 units</td><td>Rs 2,299 + GST</td><td>12 to 18 days</td><td>Multi-colour print or custom sleeve</td></tr>
+            <tr><td>500+ units</td><td>Rs 2,099 + GST</td><td>18 to 40 days</td><td>Bespoke packaging and co-branding</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="kr-corp-grid">
+        <div class="kr-faq">
+          <h3 class="kr-mini">Frequently asked</h3>
+          <details><summary>What is your minimum order quantity?</summary><p>Our standard tiers start at 25 units. Smaller one-off orders can usually be accommodated. Ask us directly.</p></details>
+          <details><summary>Do you offer rush turnaround?</summary><p>Yes, for a subset of our catalogue. Tell us your deadline in the enquiry form and we will confirm feasibility within 24 hours.</p></details>
+          <details><summary>Is GST included in the pricing?</summary><p>Unit prices are shown before GST. Every order ships with a compliant GST invoice.</p></details>
+          <details><summary>Can we ship to multiple addresses in one order?</summary><p>Yes. This is common for distributed and remote teams. Share your address list and we will handle the split.</p></details>
+          <details><summary>Which branding methods do you offer?</summary><p>Laser engraving, UV and full-colour print, foil stamping and embroidery, matched to each product.</p></details>
+        </div>
+        <div class="kr-gst">
+          <h3>GST and compliance</h3>
+          <p>Plan gifting budgets GST-inclusive. Input Tax Credit on gifts is generally blocked under Section 17(5)(h) of the CGST Act.</p>
+          <p>Employee gifts above Rs 50,000 in a financial year, and business gifts to partners above Rs 20,000, have specific tax treatment. Please confirm with your own tax advisor.</p>
+          <p class="kr-fine">General information only, not tax advice.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE STUDIO -->
+  <section class="kr-studio" id="studio" aria-labelledby="kr-studio-h">
+    <div class="kr-wrap kr-studio-grid">
+      <figure class="reveal"><img src="img/studio.webp" alt="Open charcoal gift box with a steel tumbler, notebook, pen and coffee pouch, softly lit" loading="lazy" width="900" height="1080"></figure>
+      <div>
+        <p class="kr-eyebrow">The studio</p>
+        <h2 id="kr-studio-h" class="kr-h2">A small team that treats gifting as a craft, not a checkbox.</h2>
+        <p>Most corporate gifting feels like an afterthought: a branded pen dropped into a plain box. We wanted the opposite, gifts a company is proud to put its name on, made without the usual back-and-forth.</p>
+        <p>Every hamper is approved as a mockup before it is made, priced transparently, and shipped with paperwork your finance team will not have to chase.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHAPTER 7: THE FINAL REVEAL -->
+  <section class="kr-final" id="final" aria-labelledby="kr-final-h">
+    <img class="kr-final-img reveal" src="img/film-collection.webp" alt="The finished KORE hamper, open, every gift in place and the bow resting beside it" loading="lazy" width="1600" height="950">
+    <div class="kr-final-copy">
+      <h2 id="kr-final-h" class="kr-display">Make It Unforgettable.</h2>
+      <a class="kr-btn kr-btn-solid kr-btn-lg" data-builder href="customize-hamper.html">Build Your Hamper</a>
+    </div>
+  </section>
+
+  <!-- ENQUIRY (existing form, now sends) -->
+  <section class="kr-enquiry" id="enquiry" aria-labelledby="kr-enq-h">
+    <div class="kr-wrap kr-enquiry-grid">
+      <div>
+        <p class="kr-eyebrow">Start a conversation</p>
+        <h2 id="kr-enq-h" class="kr-h2">Ready to gift better?</h2>
+        <p>Answer a few quick questions and we will send a free custom proposal. No account, no long form.</p>
+        <div class="kr-contact">
+          <p><strong>Call <span class="kr-select">+91 96069 93969</span></strong><br><span class="kr-muted">Prop: Sujay Shetty</span></p>
+          <p><a href="https://wa.me/919606993969">WhatsApp us directly</a></p>
+          <p class="kr-muted">We reply within 24 hours.</p>
+        </div>
+      </div>
+      <form class="kr-form" id="kr-enquiry-form" novalidate aria-label="Corporate gifting enquiry">
+        <div class="kr-field"><label for="f-occ">What is the occasion?</label>
+          <select id="f-occ" name="occasion"><option>Onboarding</option><option>Festive or Diwali</option><option>Client gift</option><option>Anniversary</option><option>Wedding</option><option>Other</option></select></div>
+        <div class="kr-field"><label for="f-qty">Roughly how many recipients?</label>
+          <select id="f-qty" name="quantity"><option>Under 25</option><option>25 to 99</option><option>100 to 499</option><option>500+</option></select></div>
+        <div class="kr-field"><label for="f-name">Name</label><input id="f-name" name="name" type="text" autocomplete="name" required maxlength="80"><p class="kr-err" id="f-name-err" hidden></p></div>
+        <div class="kr-field"><label for="f-email">Work email</label><input id="f-email" name="email" type="email" autocomplete="email" required maxlength="120"><p class="kr-err" id="f-email-err" hidden></p></div>
+        <div class="kr-field"><label for="f-company">Company name <small>optional</small></label><input id="f-company" name="company" type="text" autocomplete="organization" maxlength="100"></div>
+        <button type="submit" class="kr-btn kr-btn-solid kr-btn-lg">Get My Free Mockup</button>
+        <p class="kr-form-status" id="kr-form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="kr-footer">
+  <div class="kr-wrap">
+    <div class="kr-footer-grid">
+      <div><p class="kr-logo kr-logo-light"><img src="img/kore-logo.png" alt="KORE Gifting Studios" width="1200" height="222" loading="lazy"></p><p>Corporate gifting and custom hampers, curated and delivered across India.</p></div>
+      <div><h3>Explore</h3><p><a href="#occasions">Curated hampers</a></p><p><a data-builder href="customize-hamper.html">Customize Your Hamper</a></p><p><a href="#studio">The studio</a></p></div>
+      <div><h3>Policies</h3><p><a href="#corporate">Shipping and delivery</a></p><p><a href="#corporate">GST and compliance</a></p></div>
+      <div><h3>Contact</h3><p><a href="mailto:koreexpression@gmail.com">koreexpression@gmail.com</a></p><p><a href="https://wa.me/919606993969">WhatsApp</a></p></div>
+    </div>
+    <p class="kr-copy">© 2026 KORE Gifting Studio</p>
+  </div>
+  <button type="button" class="kr-inbox-btn" id="kr-inbox-btn" hidden>Enquiries inbox</button>
+  <section class="kr-inbox" id="kr-inbox" hidden aria-label="Enquiries inbox"></section>
+</footer>
+
+<script src="home-config.js"></script>
+<script src="hamper-catalogue.js"></script>
+<script src="home-scene.js"></script>
+<script src="home.js"></script>
+</body>
+</html>
