@@ -548,7 +548,7 @@ c.userData.engrave = engr;
       [[0, 0.01], [3.6, 0.01], [3.95, 0.12], [4.15, 0.45], [4.22, 1.2], [4.25, 9.2], [4.2, 9.45], [4.06, 9.56], [3.92, 9.45], [3.86, 9.1], [3.82, 1.4], [3.5, 1.25], [0, 1.22]].forEach(function (p) { pts.push(new THREE.Vector2(p[0], p[1])); });
       g.add(mesh(new THREE.LatheGeometry(pts, small ? 48 : 96), M.mug));
       var handle = mesh(new THREE.TorusGeometry(2.4, 0.52, 20, 40, Math.PI), M.mug); handle.position.set(4.1, 5, 0); handle.rotation.z = -Math.PI / 2; g.add(handle);
-      var print = new THREE.Mesh(keep(new THREE.CylinderGeometry(4.27, 4.27, 3.6, 32, 1, true, -1.05, 2.1)), std({ map: labelTexture([SAMPLE.mug], { aspect: 4.27 * 1.7 / 3.6, colour: hex('terracotta', '#A8562E'), font: "'Cormorant', Georgia, serif", size: 0.45, weight: '400' }), transparent: true, roughness: 0.3, depthWrite: false }));
+      var print = new THREE.Mesh(keep(new THREE.CylinderGeometry(4.27, 4.27, 3.6, 32, 1, true, -1.05, 2.1)), std({ map: labelTexture([SAMPLE.mug], { aspect: 4.27 * 1.7 / 3.6, colour: '#F5EBDD', font: "'Cormorant', Georgia, serif", size: 0.5, weight: '500' }), transparent: true, roughness: 0.3, depthWrite: false }));
       return centred(g, 9.5);
     }
     function makePen() {
