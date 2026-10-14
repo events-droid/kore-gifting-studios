@@ -522,7 +522,7 @@
       var capTop = mesh(new THREE.TorusGeometry(1.8, 0.16, 10, 48), M.steelDark); capTop.rotation.x = Math.PI / 2; capTop.position.y = 25.85; g.add(capTop);
       var collar = mesh(new THREE.CylinderGeometry(1.8, 1.8, 0.35, 48), M.gold); collar.position.y = 22.95; g.add(collar);
       var band = mesh(new THREE.CylinderGeometry(3.62, 3.62, 0.5, 48, 1, true), M.gold); band.position.y = 3; g.add(band);
-      var engr = new THREE.Mesh(keep(new THREE.CylinderGeometry(3.63, 3.63, 4, 32, 1, true, -1.0, 2.0)), std({ map: labelTexture([SAMPLE.bottle], { aspect: 3.6 / 4 * 1.5, colour: '#D8D4CB', font: "'Cormorant', Georgia, serif", size: 0.7 }), transparent: true, opacity: 0, roughness: 0.34, metalness: 0.95, depthWrite: false, envMapIntensity: 1.4 }));
+      var engr = new THREE.Mesh(keep(new THREE.CylinderGeometry(3.63, 3.63, 4, 32, 1, true, -1.0, 2.0)), std({ map: labelTexture([SAMPLE.bottle], { aspect: 3.6 / 4 * 1.5, colour: '#D8D4CB', font: "'Cormorant', Georgia, serif", size: 0.5 }), transparent: true, opacity: 0, roughness: 0.34, metalness: 0.95, depthWrite: false, envMapIntensity: 1.4 }));
       engr.position.y = 12; engr.renderOrder = 2; g.add(engr);
       var c = centred(g, 25.9);
 c.userData.engrave = engr;                                                                                                                                                                                                                                                        
@@ -535,7 +535,7 @@ c.userData.engrave = engr;
       var spine = mesh(new THREE.CylinderGeometry(th / 2, th / 2, h - 0.1, 24, 1, false, Math.PI, Math.PI), M.notebook); spine.position.set(-w / 2 + 0.3, h / 2, 0); g.add(spine);
       var hinge = new THREE.Group(); hinge.position.set(-w / 2 + 0.3, 0, th / 2 - 0.11);
       var cover = mesh(roundGeo(w - 0.3, h, 0.24, 0.1), M.notebook); cover.position.set((w - 0.3) / 2, h / 2, 0); hinge.add(cover);
-      var foil = labelPlane(labelTexture([SAMPLE.notebook], { aspect: 1.4, colour: '#D3B26A', size: 0.7 }), 9, 5, { metal: 0.85, rough: 0.3 });
+      var foil = labelPlane(labelTexture([SAMPLE.notebook], { aspect: 1.4, colour: '#D3B26A', size: 0.5 }), 9, 5, { metal: 0.85, rough: 0.3 });
       foil.position.set((w - 0.3) / 2, h * 0.58, 0.12); hinge.add(foil);
       var elastic = mesh(new THREE.BoxGeometry(0.35, h + 0.02, th + 0.1), std({ color: '#1d1a17', roughness: 0.6 })); elastic.position.set(w * 0.38, h / 2, 0); g.add(elastic);
       g.add(hinge);
@@ -548,7 +548,7 @@ c.userData.engrave = engr;
       [[0, 0.01], [3.6, 0.01], [3.95, 0.12], [4.15, 0.45], [4.22, 1.2], [4.25, 9.2], [4.2, 9.45], [4.06, 9.56], [3.92, 9.45], [3.86, 9.1], [3.82, 1.4], [3.5, 1.25], [0, 1.22]].forEach(function (p) { pts.push(new THREE.Vector2(p[0], p[1])); });
       g.add(mesh(new THREE.LatheGeometry(pts, small ? 48 : 96), M.mug));
       var handle = mesh(new THREE.TorusGeometry(2.4, 0.52, 20, 40, Math.PI), M.mug); handle.position.set(4.1, 5, 0); handle.rotation.z = -Math.PI / 2; g.add(handle);
-      var print = new THREE.Mesh(keep(new THREE.CylinderGeometry(4.27, 4.27, 3.6, 32, 1, true, -1.05, 2.1)), std({ map: labelTexture([SAMPLE.mug], { aspect: 4.27 * 1.7 / 3.6, colour: hex('terracotta', '#A8562E'), font: "'Cormorant', Georgia, serif", size: 0.6 }), transparent: true, roughness: 0.3, depthWrite: false }));
+      var print = new THREE.Mesh(keep(new THREE.CylinderGeometry(4.27, 4.27, 3.6, 32, 1, true, -1.05, 2.1)), std({ map: labelTexture([SAMPLE.mug], { aspect: 4.27 * 1.7 / 3.6, colour: hex('terracotta', '#A8562E'), font: "'Cormorant', Georgia, serif", size: 0.5 }), transparent: true, roughness: 0.3, depthWrite: false }));
       print.position.y = 5; print.renderOrder = 2; g.add(print);
       return centred(g, 9.5);
     }
