@@ -535,7 +535,7 @@ c.userData.engrave = engr;
       var spine = mesh(new THREE.CylinderGeometry(th / 2, th / 2, h - 0.1, 24, 1, false, Math.PI, Math.PI), M.notebook); spine.position.set(-w / 2 + 0.3, h / 2, 0); g.add(spine);
       var hinge = new THREE.Group(); hinge.position.set(-w / 2 + 0.3, 0, th / 2 - 0.11);
       var cover = mesh(roundGeo(w - 0.3, h, 0.24, 0.1), M.notebook); cover.position.set((w - 0.3) / 2, h / 2, 0); hinge.add(cover);
-      var foil = labelPlane(labelTexture([SAMPLE.notebook], { aspect: 1.4, colour: '#D3B26A', size: 0.5 }), 9, 5, { metal: 0.85, rough: 0.3 });
+      var foil = labelPlane(labelTexture([SAMPLE.notebook], { aspect: 1.4, colour: '#D3B26A', size: 0.50, weight: '400' }), 9, 5, { metal: 0.85, rough: 0.3 });
       foil.position.set((w - 0.3) / 2, h * 0.58, 0.12); hinge.add(foil);
       var elastic = mesh(new THREE.BoxGeometry(0.35, h + 0.02, th + 0.1), std({ color: '#1d1a17', roughness: 0.6 })); elastic.position.set(w * 0.38, h / 2, 0); g.add(elastic);
       g.add(hinge);
