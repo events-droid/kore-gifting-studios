@@ -67,7 +67,7 @@ body.kr { margin: 0; background: var(--bg); color: var(--fg); font-family: var(-
 .kr-logo { font-family: var(--f-logo); font-weight: 600; font-size: 27px; color: var(--accent) !important; text-decoration: none; display: inline-flex; align-items: baseline; gap: 8px; white-space: nowrap; }
 .kr-logo span { font-family: var(--f-body); font-size: 10px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); }
 .kr-logo-light { color: var(--accent) !important; }
-.kr-logo img { display: block; height: 44px; width: auto; }
+.kr-logo img { display: block; height: 64px; width: auto; }
 .kr-footer .kr-logo img { height: 40px; margin-bottom: 4px; }
 .kr-logo-light span { color: var(--muted); }
 .kr-links { display: flex; align-items: center; gap: 26px; font-size: 14px; font-weight: 500; }
